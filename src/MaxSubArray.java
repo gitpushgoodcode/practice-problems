@@ -84,4 +84,9 @@ public class MaxSubArray {
     int[] input = new int[]{13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
     System.out.println(maxSubArray.getMaxSubArray(input));
   }
+
+  /*
+  Time Complexity: T(n) = 2T(n/2) + O(n) .. divide into 2 sub problems + combine solutions
+  By Master Method, time complexity is hence O(nlogn)
+   */
 }
